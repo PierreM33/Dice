@@ -1,0 +1,49 @@
+.player-container {
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+}
+
+.player-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.player-score {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.current-score {
+  background-color: var(--red);
+  color: black;
+  padding: 5px;
+  border-radius: 4px; /* Optional: rounded corners */
+  width: 50%; /* Make it the full width of the container */
+  text-align: center;
+  font-size: 2.5em;
+}
+
+
+.history-container {
+  width: 100%;
+  min-height: 150px;
+  max-height: 150px; /* Ajuste la hauteur maximale selon tes besoins */
+  overflow-y: auto; /* Affiche une barre de défilement verticale si nécessaire */
+  margin-top: 10px;
+}
+
+.history-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-container li {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 0;
+}

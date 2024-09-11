@@ -1,0 +1,72 @@
+.game-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+    height: 100%; /* Remplit la hauteur disponible */
+}
+
+.game-top {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px; /* Espacement entre le haut et le milieu */
+}
+
+.new-game-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: var(--blue);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.player-info {
+    margin-top: 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.game-result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* Prend tout l'espace disponible */
+    margin-bottom: 20px; /* Espacement entre le milieu et le bas */
+    font-size: 2em;
+    background-color: #f8f9fa; /* Couleur de fond du résultat */
+    border: 1px solid #ddd; /* Bordure autour du résultat */
+    padding: 20px;
+    border-radius: 5px; /* Coins arrondis */
+}
+
+.game-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: flex-end;
+}
+
+.roll-dice-button,
+.hold-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer;
+}
+
+.roll-dice-button {
+    background-color: var(--green); /* Couleur de fond du bouton Roll Dice */
+    color: white;
+}
+
+.hold-button {
+    background-color: var(--green); /* Couleur de fond du bouton Hold */
+    color: white;
+}
