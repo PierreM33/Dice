@@ -47,3 +47,51 @@
   border-bottom: 1px solid #ccc;
   padding: 5px 0;
 }
+
+/*RESPOSIVE */
+
+@media (max-width: 768px) {
+  .player-container {
+    padding: 8px;
+  }
+
+  .player-name {
+    font-size: 1.5em;
+  }
+
+  .player-score {
+    font-size: 1.2em;
+  }
+
+  .current-score {
+    font-size: 2em;
+    width: 70%; /* Ajuster la largeur pour les écrans moyens */
+  }
+
+  .history-container {
+    max-height: 120px; /* Ajuste la hauteur maximale */
+  }
+}
+
+@media (max-width: 480px) {
+  .player-container {
+    padding: 5px;
+  }
+
+  .player-name {
+    font-size: 1.2em;
+  }
+
+  .player-score {
+    font-size: 1em;
+  }
+
+  .current-score {
+    font-size: 1.5em;
+    width: 90%; /* Largeur ajustée pour les petits écrans */
+  }
+
+  .history-container {
+    max-height: 100px; /* Ajuste encore la hauteur maximale */
+  }
+}

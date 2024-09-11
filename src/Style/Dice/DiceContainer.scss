@@ -70,3 +70,68 @@
     background-color: var(--green); /* Couleur de fond du bouton Hold */
     color: white;
 }
+
+
+
+/* Styles responsive */
+@media (max-width: 768px) {
+    .game-top,
+    .game-result,
+    .game-bottom {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .game-top {
+        margin-bottom: 10px;
+    }
+
+    .player-info {
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    .game-result {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+
+    .game-bottom {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px; /* Espacement entre les boutons */
+    }
+
+    .roll-dice-button,
+    .hold-button {
+        width: 100%; /* Boutons prennent toute la largeur */
+        padding: 15px;
+        font-size: 1.1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .game-container {
+        padding: 5px;
+    }
+
+    .new-game-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .player-info {
+        font-size: 0.9em;
+    }
+
+    .game-result {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    .roll-dice-button,
+    .hold-button {
+        padding: 12px;
+        font-size: 1em;
+    }
+}
